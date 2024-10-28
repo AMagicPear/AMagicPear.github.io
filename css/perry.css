@@ -1,7 +1,7 @@
 /* 萌神手写体字体 */
 @font-face {
-    font-family: lovexhj;
-    src: url("../fonts/lovexhj.ttf");
+    font-family: perry;
+    src: url("../fonts/perry.ttf");
 }
 
 /* 全局样式 */
@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     outline: none;
-    font-family: lovexhj;
+    font-family: perry;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
     /* 标题文字大小 */
@@ -22,7 +22,7 @@ body {
     background: #f1f2f6;
 }
 
-#lovexhj {
+#perry {
     height: 100%;
 }
 
@@ -46,10 +46,10 @@ body::-webkit-scrollbar-thumb {
 
 /* 统一过渡 */
 .loadMore,
-.lovexhj2ContentText li,
-.lovexhj3ContentBoxText,
-.lovexhj3ContentBox img,
-.lovexhj3ContentBtn {
+.perry2ContentText li,
+.perry3ContentBoxText,
+.perry3ContentBox img,
+.perry3ContentBtn {
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -102,18 +102,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* 主框架 */
-.lovexhj {
+.perry {
     position: relative;
 }
 
 /* 首页 */
-.lovexhj1 {
+.magic {
     height: 800px;
     overflow: hidden;
 }
 
 /* 首页内容 */
-.lovexhjContent {
+.perryContent {
     position: relative;
     left: 0;
     width: 50%;
@@ -125,7 +125,7 @@ body::-webkit-scrollbar-thumb {
     box-sizing: border-box;
 }
 
-.lovexhj1Content {
+.magicContent {
     position: absolute;
     box-shadow: 10px 0 30px black;
     z-index: 2;
@@ -173,20 +173,20 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* 首页背景 */
-.lovexhjBg {
+.perryBg {
     width: 50%;
     height: 100%;
     position: absolute;
 }
 
-.lovexhj1Bg {
+.magicBg {
     right: 0;
     background: url("../images/bg.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
 
-.lovexhj2Bg {
+.perry2Bg {
     left: 0;
     background: url("../images/bg2.jpg");
     background-size: cover;
@@ -194,37 +194,37 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* 内容 */
-.lovexhj2 {
+.perry2 {
     height: 1000px;
 }
 
-.lovexhj2Content {
+.perry2Content {
     width: 100%;
 }
 
-.lovexhj2Content>div,
-.lovexhj3Content>div {
+.perry2Content>div,
+.perry3Content>div {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.lovexhj2ContentTitle {
+.perry2ContentTitle {
     width: 100%;
     font-size: var(--titleSize);
     text-align: center;
     margin-bottom: 30px;
 }
 
-.lovexhj2ContentMe {
+.perry2ContentMe {
     display: flex;
     justify-content: center;
     padding: 0 10%;
     margin-bottom: 30px;
 }
 
-.lovexhj2ContentImg {
+.perry2ContentImg {
     width: 200px;
     height: 300px;
     min-width: 200px;
@@ -241,39 +241,39 @@ body::-webkit-scrollbar-thumb {
     -o-transform: rotate(2deg);
 }
 
-.lovexhj2ContentImg img {
+.perry2ContentImg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.lovexhj2ContentText {
+.perry2ContentText {
     font-size: var(--contextSize);
 }
 
-.lovexhj2ContentTextBox {
+.perry2ContentTextBox {
     line-height: 2rem;
 }
 
-.lovexhj2ContentTextBox b {
+.perry2ContentTextBox b {
     padding: 0 5px;
 }
 
-.lovexhj2ContentTextBox span {
+.perry2ContentTextBox span {
     padding: 0 1rem;
 }
 
-.lovexhj2ContentTextBox span::after {
+.perry2ContentTextBox span::after {
     content: '>';
 }
 
-.lovexhj2ContentText ul {
+.perry2ContentText ul {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
 
-.lovexhj2ContentText li {
+.perry2ContentText li {
     width: 100%;
     height: 150px;
     margin: 0 15px;
@@ -284,7 +284,7 @@ body::-webkit-scrollbar-thumb {
     box-shadow: rgba(50, 50, 93, 0.35) 0px 13px 27px -5px, rgba(0, 0, 0, 0.4) 0px 8px 16px -8px;
 }
 
-.lovexhj2ContentText li:hover {
+.perry2ContentText li:hover {
     transform: translateY(-10px);
     -webkit-transform: translateY(-10px);
     -moz-transform: translateY(-10px);
@@ -293,7 +293,7 @@ body::-webkit-scrollbar-thumb {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 23px 27px -5px, rgba(0, 0, 0, 0.3) 0px 18px 16px -8px;
 }
 
-.lovexhj2ContentText li i {
+.perry2ContentText li i {
     position: absolute;
     font-size: 5rem;
     color: rgba(128, 128, 128, .15);
@@ -301,20 +301,20 @@ body::-webkit-scrollbar-thumb {
     right: 10px;
 }
 
-.lovexhj2ContentText li span {
+.perry2ContentText li span {
     font-size: 2rem;
 }
 
-.lovexhj2ContentText li p {
+.perry2ContentText li p {
     font-size: var(--contextSize);
 }
 
-.lovexhj2ContentText li p:nth-child(4) {
+.perry2ContentText li p:nth-child(4) {
     font-size: 1.1rem;
 }
 
 /* 项目介绍 */
-.lovexhj3 {
+.perry3 {
     height: auto;
     background: white;
     border-radius: 200px 200px 0 0;
@@ -324,20 +324,20 @@ body::-webkit-scrollbar-thumb {
     -o-border-radius: 200px 200px 0 0;
 }
 
-.lovexhj3Content {
+.perry3Content {
     width: 100%;
     height: auto;
 }
 
-.lovexhj3ContentList {
+.perry3ContentList {
     width: 1000px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.lovexhj3ContentBox,
-.lovexhj3ContentBoxTc {
+.perry3ContentBox,
+.perry3ContentBoxTc {
     width: 300px;
     height: 400px;
     background: white;
@@ -349,22 +349,22 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
 }
 
-.lovexhj3ContentBox {
+.perry3ContentBox {
     box-shadow: rgba(50, 50, 93, 0.35) 0px 13px 27px -5px, rgba(0, 0, 0, 0.4) 0px 8px 16px -8px;
 }
 
-.lovexhj3ContentBoxTc {
+.perry3ContentBoxTc {
     height: 0 !important;
 }
 
-.lovexhj3ContentBox img {
+.perry3ContentBox img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
 }
 
-.lovexhj3ContentBox:hover img {
+.perry3ContentBox:hover img {
     transform: scale(1.5) rotate(5deg);
     -webkit-transform: scale(1.5) rotate(5deg);
     -moz-transform: scale(1.5) rotate(5deg);
@@ -372,7 +372,7 @@ body::-webkit-scrollbar-thumb {
     -o-transform: scale(1.5) rotate(5deg);
 }
 
-.lovexhj3ContentBoxText {
+.perry3ContentBoxText {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -389,7 +389,7 @@ body::-webkit-scrollbar-thumb {
     box-sizing: border-box;
 }
 
-.lovexhj3ContentBox:hover .lovexhj3ContentBoxText {
+.perry3ContentBox:hover .perry3ContentBoxText {
     transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -397,25 +397,25 @@ body::-webkit-scrollbar-thumb {
     -o-transform: scale(1);
 }
 
-.lovexhj3ContentTitle {
+.perry3ContentTitle {
     font-size: 3rem;
 }
 
-.lovexhj3ContentText {
+.perry3ContentText {
     font-size: var(--contextSize);
 }
 
-.lovexhj3ContentBoxText ul {
+.perry3ContentBoxText ul {
     display: flex;
     flex-wrap: wrap;
     margin: 3px 0 10px;
 }
 
-.lovexhj3ContentBoxText li {
+.perry3ContentBoxText li {
     margin-right: 10px;
 }
 
-.lovexhj3ContentBtn {
+.perry3ContentBtn {
     display: inline-block;
     cursor: pointer;
     padding: 5px 30px 8px;
@@ -425,43 +425,43 @@ body::-webkit-scrollbar-thumb {
     margin-top: 20px;
 }
 
-.lovexhj3ContentBtn:hover {
+.perry3ContentBtn:hover {
     color: white;
     box-shadow: inset 0 -100px 0 black;
 }
 
-.lovexhj3LoadMore {
+.perry3LoadMore {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
 /* 联系我 */
-.lovexhj4 {
+.perry4 {
     height: 800px;
 }
 
-.lovexhj4Content {
+.perry4Content {
     left: 50%;
     flex-wrap: wrap;
 }
 
-.lovexhj4Bg {
+.perry4Bg {
     left: 0;
     background: url("../images/bg.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
 
-.lovexhj4ItemTitle {
+.perry4ItemTitle {
     font-size: 2rem;
 }
 
-.lovexhj4ItemContext {
+.perry4ItemContext {
     font-size: 1.2rem;
 }
 
-.lovexhj4Content li {
+.perry4Content li {
     margin: 20px 0;
 }
 
@@ -497,7 +497,7 @@ body::-webkit-scrollbar-thumb {
     font-weight: normal;
 }
 
-.el-dialog__body .lovexhj3ContentBtn {
+.el-dialog__body .perry3ContentBtn {
     margin: 0;
     margin-bottom: 20px;
 }
@@ -516,26 +516,26 @@ body::-webkit-scrollbar-thumb {
 
 /* 自适应 */
 @media(max-width:1400px) {
-    .lovexhj2 {
+    .perry2 {
         height: 1200px;
     }
 
-    .lovexhj2ContentText ul {
+    .perry2ContentText ul {
         flex-wrap: wrap;
     }
 
-    .lovexhj2ContentText li {
+    .perry2ContentText li {
         width: 46%;
         margin: 0 0 30px;
     }
 
-    .lovexhj2ContentMe {
+    .perry2ContentMe {
         padding: 0 5%;
     }
 }
 
 @media(max-width:1070px) {
-    .lovexhj3 {
+    .perry3 {
         border-radius: 150px 150px 0 0;
         -webkit-border-radius: 150px 150px 0 0;
         -moz-border-radius: 150px 150px 0 0;
@@ -543,7 +543,7 @@ body::-webkit-scrollbar-thumb {
         -o-border-radius: 150px 150px 0 0;
     }
 
-    .lovexhj3ContentList {
+    .perry3ContentList {
         width: 660px;
         min-width: 660px;
     }
@@ -555,29 +555,29 @@ body::-webkit-scrollbar-thumb {
         --contextSize: 1.2rem;
     }
 
-    .lovexhj1Content {
+    .magicContent {
         padding: 40px;
     }
 
-    .lovexhj2ContentMe {
+    .perry2ContentMe {
         padding: 0;
     }
 
-    .lovexhj2 {
+    .perry2 {
         height: 1500px;
     }
 
-    .lovexhj2ContentMe {
+    .perry2ContentMe {
         flex-wrap: wrap;
     }
 
-    .lovexhj2ContentImg {
+    .perry2ContentImg {
         margin-bottom: 30px;
     }
 }
 
 @media(max-width: 778px) {
-    .lovexhj3 {
+    .perry3 {
         border-radius: 100px 100px 0 0;
         -webkit-border-radius: 100px 100px 0 0;
         -moz-border-radius: 100px 100px 0 0;
@@ -585,12 +585,12 @@ body::-webkit-scrollbar-thumb {
         -o-border-radius: 100px 100px 0 0;
 }
 
-    .lovexhj3ContentList {
+    .perry3ContentList {
         width: 300px;
         min-width: 300px;
     }
 
-    .lovexhj3ContentBoxText {
+    .perry3ContentBoxText {
         transform: scale(1);
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
@@ -600,17 +600,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media(max-width: 560px) {
-    .lovexhj1 {
+    .magic {
         height: 700px;
     }
 
-    .lovexhj1Bg {
+    .magicBg {
         width: 100%;
         height: 40%;
         top: 0;
     }
 
-    .lovexhj1Content {
+    .magicContent {
         bottom: 0;
         width: 100%;
         height: 60%;
@@ -620,25 +620,25 @@ body::-webkit-scrollbar-thumb {
         padding: 5px 30px 10px;
     }
 
-    .lovexhj2 {
+    .perry2 {
         height: 1800px;
     }
 
-    .lovexhj2Content {
+    .perry2Content {
         padding: 80px 40px;
     }
 
-    .lovexhj2ContentText li {
+    .perry2ContentText li {
         width: 100%;
     }
 
-    .lovexhj4Content {
+    .perry4Content {
         width: 65%;
         left: 30%;
         padding: 20px;
     }
 
-    .lovexhj4Bg {
+    .perry4Bg {
         width: 35%;
     }
 

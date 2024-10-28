@@ -12,23 +12,23 @@
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdn.bootcdn.net/ajax/libs/viewerjs/1.9.0/viewer.min.css" rel="stylesheet">
     <link href="https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.1/theme-chalk/index.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/lovexhj.css">
+    <link rel="stylesheet" href="./css/perry.css">
 </head>
 
 <body>
-    <div id="lovexhj" v-if="lovexhj" v-cloak>
+    <div id="perry" v-if="perry" v-cloak>
         <!-- 首页 -->
-        <div class="lovexhj lovexhj1">
+        <div class="perry magic">
             <!-- 内容 -->
-            <div class="lovexhjContent lovexhj1Content">
+            <div class="perryContent magicContent">
                 <div>
                     <div class="ContentTitle">
-                        <span>{{lovexhj.index.title}}</span>
-                        <span class="lovexhj1Typet"></span>
+                        <span>{{perry.index.title}}</span>
+                        <span class="magicTypet"></span>
                     </div>
-                    <div class="ContentSubTitle">{{lovexhj.index.subTitle}}</div>
+                    <div class="ContentSubTitle">{{perry.index.subTitle}}</div>
                     <ul class="ContentContact">
-                        <li v-for="(item, index) in lovexhj.index.contact" :key="index">
+                        <li v-for="(item, index) in perry.index.contact" :key="index">
                             <a :href="item.link" target="_blank">
                                 <el-tooltip :content="item.name" placement="bottom" effect="light">
                                     <i :class="'fa ' + item.icon"></i>
@@ -36,29 +36,29 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="lovexhj1LoadMore">
-                        <div class="loadMore" @click="scrollGoTo(lovexhj.index.loadMore.class)">
-                            {{lovexhj.index.loadMore.text}}</div>
+                    <div class="magicLoadMore">
+                        <div class="loadMore" @click="scrollGoTo(perry.index.loadMore.class)">
+                            {{perry.index.loadMore.text}}</div>
                     </div>
                 </div>
             </div>
             <!-- 壁纸 -->
-            <div class="lovexhjBg lovexhj1Bg"></div>
+            <div class="perryBg magicBg"></div>
         </div>
         <!-- 个人简介 -->
-        <div class="lovexhj lovexhj2">
+        <div class="perry perry2">
             <!-- 内容 -->
-            <div class="lovexhjContent lovexhj2Content">
+            <div class="perryContent perry2Content">
                 <div>
-                    <p class="lovexhj2ContentTitle">{{lovexhj.about.title}}</p>
-                    <div class="lovexhj2ContentMe">
-                        <div class="lovexhj2ContentImg">
-                            <img :src="lovexhj.about.laozi.img" :alt="lovexhj.about.laozi.img">
+                    <p class="perry2ContentTitle">{{perry.about.title}}</p>
+                    <div class="perry2ContentMe">
+                        <div class="perry2ContentImg">
+                            <img :src="perry.about.laozi.img" :alt="perry.about.laozi.img">
                         </div>
-                        <div class="lovexhj2ContentText">
-                            <div v-html="lovexhj.about.laozi.content" class="lovexhj2ContentTextBox"></div>
+                        <div class="perry2ContentText">
+                            <div v-html="perry.about.laozi.content" class="perry2ContentTextBox"></div>
                             <ul>
-                                <li v-for="(item, index) in lovexhj.about.ability"
+                                <li v-for="(item, index) in perry.about.ability"
                                     :style="'border-top: 5px solid ' + item.color">
                                     <i :class="'fa ' + item.icon "></i>
                                     <span :style="'color:' + item.color">{{item.bfb}}</span>
@@ -68,63 +68,63 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="lovexhj2LoadMore">
-                        <div class="loadMore" @click="scrollGoTo(lovexhj.about.loadMore.class)">
-                            {{lovexhj.about.loadMore.text}}</div>
+                    <div class="perry2LoadMore">
+                        <div class="loadMore" @click="scrollGoTo(perry.about.loadMore.class)">
+                            {{perry.about.loadMore.text}}</div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- 项目介绍 -->
-        <div class="lovexhj lovexhj3">
-            <div class="lovexhjContent lovexhj3Content">
+        <div class="perry perry3">
+            <div class="perryContent perry3Content">
                 <div>
-                    <p class="lovexhj2ContentTitle">{{lovexhj.project.title}}</p>
-                    <div class="lovexhj3ContentList">
-                        <div class="lovexhj3ContentBox" v-for="(item, index) in lovexhj.project.list" :key="index">
+                    <p class="perry2ContentTitle">{{perry.project.title}}</p>
+                    <div class="perry3ContentList">
+                        <div class="perry3ContentBox" v-for="(item, index) in perry.project.list" :key="index">
                             <img :src="item.img" :alt="item.img">
-                            <div class="lovexhj3ContentBoxText">
+                            <div class="perry3ContentBoxText">
                                 <div>
-                                    <p class="lovexhj3ContentTitle">{{item.name}}</p>
+                                    <p class="perry3ContentTitle">{{item.name}}</p>
                                     <ul>
                                         <li v-for="(nb, index) in item.nb" :key="index">
                                             {{nb}}
                                             <span v-if="index != item.nb.length - 1">+</span>
                                         </li>
                                     </ul>
-                                    <p class="lovexhj3ContentText">{{item.text}}</p>
-                                    <div class="lovexhj3ContentBtn" @click="showProject(index)">
-                                        {{lovexhj.project.listLoadMore}}</div>
+                                    <p class="perry3ContentText">{{item.text}}</p>
+                                    <div class="perry3ContentBtn" @click="showProject(index)">
+                                        {{perry.project.listLoadMore}}</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="lovexhj3ContentBoxTc"></div>
-                        <div class="lovexhj3ContentBoxTc"></div>
+                        <div class="perry3ContentBoxTc"></div>
+                        <div class="perry3ContentBoxTc"></div>
                     </div>
-                    <div class="lovexhj3LoadMore">
-                        <div class="loadMore" @click="scrollGoTo(lovexhj.project.loadMore.class)">
-                            {{lovexhj.project.loadMore.text}}</div>
+                    <div class="perry3LoadMore">
+                        <div class="loadMore" @click="scrollGoTo(perry.project.loadMore.class)">
+                            {{perry.project.loadMore.text}}</div>
                     </div>
                 </div>
             </div>
-            <el-dialog :title="lovexhj.project.list[projectIndex].name" :visible.sync="projectDialog"
+            <el-dialog :title="perry.project.list[projectIndex].name" :visible.sync="projectDialog"
                 append-to-body="true" modal-append-to-body="true">
-                <a :href="lovexhj.project.list[projectIndex].url" class="lovexhj3ContentBtn" target="_blank">点我查看</a>
-                <div v-html="lovexhj.project.list[projectIndex].content"></div>
+                <a :href="perry.project.list[projectIndex].url" class="perry3ContentBtn" target="_blank">点我查看</a>
+                <div v-html="perry.project.list[projectIndex].content"></div>
             </el-dialog>
         </div>
         <!-- 联系我 -->
-        <div class="lovexhj lovexhj4">
+        <div class="perry perry4">
             <!-- 壁纸 -->
-            <div class="lovexhjBg lovexhj4Bg"></div>
+            <div class="perryBg perry4Bg"></div>
             <!-- 内容 -->
-            <div class="lovexhjContent lovexhj4Content">
+            <div class="perryContent perry4Content">
                 <div>
-                    <p class="lovexhj2ContentTitle">{{lovexhj.contact.title}}</p>
+                    <p class="perry2ContentTitle">{{perry.contact.title}}</p>
                     <ul>
-                        <li v-for="(item, index) in lovexhj.contact.list">
-                            <p class="lovexhj4ItemTitle">{{item.name}}</p>
-                            <p class="lovexhj4ItemContext">{{item.context}}</p>
+                        <li v-for="(item, index) in perry.contact.list">
+                            <p class="perry4ItemTitle">{{item.name}}</p>
+                            <p class="perry4ItemContext">{{item.context}}</p>
                         </li>
                     </ul>
                 </div>
@@ -139,7 +139,7 @@
     <script src="https://cdn.bootcdn.net/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.1/index.min.js"></script>
-    <script src="./js/lovexhj.js" type="module"></script>
+    <script src="./js/perry.js" type="module"></script>
 </body>
 
 </html>
