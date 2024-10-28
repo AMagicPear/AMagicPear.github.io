@@ -31,7 +31,7 @@ export default {
         ],
         loadMore: {
             text: "了解更多",
-            class: "lovexhj2"
+            class: "perry2"
         }
     },
     about: {
@@ -71,7 +71,7 @@ export default {
         ],
         loadMore: {
             text: "继续浏览",
-            class: "lovexhj3"
+            class: "perry3"
         }
     },
     project: {
@@ -372,7 +372,7 @@ export default {
                 </ul>`,
             },
             {
-                name: "lovexhj",
+                name: "perry",
                 text: "送给另一半的",
                 nb: [
                     "HTML", "CSS", "Js"
@@ -432,7 +432,7 @@ export default {
         listLoadMore: "查看",
         loadMore: {
             text: "继续浏览",
-            class: "lovexhj4"
+            class: "perry4"
         }
     },
     contact: {

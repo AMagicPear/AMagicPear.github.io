@@ -1,14 +1,14 @@
 import data from './data.js'
 
 new Vue({
-    el: "#lovexhj",
+    el: "#perry",
     data: {
-        lovexhj: data, // 网站文案数据
+        perry: data, // 网站文案数据
         projectDialog: false, // 项目演示窗口打开
         projectIndex: 0, // 当前展示项目索引
     },
     mounted() {
-        // console.log(this.lovexhj);
+        // console.log(this.perry);
         // 打字开启
         this.startTyping();
         // 动画加载
@@ -17,8 +17,8 @@ new Vue({
     methods: {
         // 打字开启
         startTyping() {
-            new Typed(".lovexhj1Typet", {
-                strings: this.lovexhj.index.me,
+            new Typed(".perry1Typet", {
+                strings: this.perry.index.me,
                 typeSpeed: 30,
                 backDelay: 2000,
                 backSpeed: 50,
@@ -38,13 +38,13 @@ new Vue({
                 [".ContentTitle", 0],
                 [".ContentSubTitle", 500],
                 [".ContentContact", 1000],
-                [".lovexhj1LoadMore", 1500],
-                [".lovexhj2ContentTitle", 0],
-                [".lovexhj2ContentMe", 500],
-                [".lovexhj2ContentText li", 500],
-                [".lovexhj2LoadMore", 1000],
-                [".lovexhj3ContentBox", 500],
-                [".lovexhj4Content li", 500],
+                [".perry1LoadMore", 1500],
+                [".perry2ContentTitle", 0],
+                [".perry2ContentMe", 500],
+                [".perry2ContentText li", 500],
+                [".perry2LoadMore", 1000],
+                [".perry3ContentBox", 500],
+                [".perry4Content li", 500],
             ];
             let a = ScrollReveal();
             animationDom.forEach(item => {
