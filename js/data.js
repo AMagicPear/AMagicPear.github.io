@@ -35,10 +35,10 @@ export default {
         }
     },
     about: {
-        title: "关于我",
-        laozi: {
+        title: "关于我（尚未完善）",
+        me: {
             img: "./images/me.jpg",
-            content: "<span></span>我叫<b>田琪扬</b>，今年19岁，是岳阳职业技术学院的一名大二在读生，所学专业是<b>软件技术</b>；<br /><span></span>我个人对于网站开发我有着<b>浓厚的兴趣</b>，喜欢用学习到的知识去设计与编写一些独特的网站，毕竟兴趣才是我最好的老师。<br /><span></span>曾在<b>WEB省赛荣获三等奖</b>，获得过<b>国家励志奖学金</b>，在学校中也获得过<b>优秀青年志愿者</b>，<b>学习之星称号</b>，<b>优秀班委</b>等荣誉。"
+            content: "<span></span><b>一只会魔法的梨</b>，是一种十分罕见且稀有的梨类品种。<br><span></span>每天吃小羊为食。"
         },
         ability: [{
                 icon: "fa-html5",
@@ -75,7 +75,7 @@ export default {
         }
     },
     project: {
-        title: "我的项目",
+        title: "我的项目（尚未完善）",
         list: [{
                 name: "吐槽网",
                 text: "类似于论坛，面向青年群众的吐槽网站！",
@@ -437,21 +437,18 @@ export default {
     },
     contact: {
         title: "联系我",
-        list: [{
-                name: "博客",
-                context: "blog.n0ts.top"
-            },
+        list: [
             {
                 name: "邮箱",
-                context: "mail@n0ts.top"
+                context: "AMagicPear@outlook.com"
             },
             {
                 name: "QQ",
-                context: "1656071287"
+                context: "2559407397"
             },
             {
                 name: "微信",
-                context: "n0tssss"
+                context: "AMagicPear"
             }
         ]
     }

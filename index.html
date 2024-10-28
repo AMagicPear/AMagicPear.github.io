@@ -53,10 +53,10 @@
                     <p class="perry2ContentTitle">{{perry.about.title}}</p>
                     <div class="perry2ContentMe">
                         <div class="perry2ContentImg">
-                            <img :src="perry.about.laozi.img" :alt="perry.about.laozi.img">
+                            <img :src="perry.about.me.img" :alt="perry.about.me.img">
                         </div>
                         <div class="perry2ContentText">
-                            <div v-html="perry.about.laozi.content" class="perry2ContentTextBox"></div>
+                            <div v-html="perry.about.me.content" class="perry2ContentTextBox"></div>
                             <ul>
                                 <li v-for="(item, index) in perry.about.ability"
                                     :style="'border-top: 5px solid ' + item.color">
