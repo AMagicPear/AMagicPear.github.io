@@ -1,7 +1,6 @@
-/* 萌神手写体字体 */
 @font-face {
-    font-family: perry;
-    src: url("../fonts/perry.ttf");
+    font-family: alimama;
+    src: url("../fonts/AlimamaShuHeiTi-Bold.otf");
 }
 
 /* 全局样式 */
@@ -9,7 +8,7 @@
     margin: 0;
     padding: 0;
     outline: none;
-    font-family: perry;
+    font-family: alimama;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
     /* 标题文字大小 */
