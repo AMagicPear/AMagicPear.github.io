@@ -1,4 +1,5 @@
-export const data = {
+import { ref } from "vue";
+const data = {
     index: {
         title: "你好，我是",
         me: [
@@ -453,3 +454,4 @@ export const data = {
         ]
     }
 }
+export const perry_data = ref(data);
