@@ -180,16 +180,14 @@ body::-webkit-scrollbar-thumb {
 
 .magicBg {
     right: 0;
-    background: url("../images/bg.jpg");
     background-size: cover;
-    background-attachment: fixed;
+    background: url("../images/bg.jpg") fixed;
 }
 
 .perry2Bg {
     left: 0;
-    background: url("../images/bg2.jpg");
     background-size: cover;
-    background-attachment: fixed;
+    background: url("../images/bg2.jpg") fixed;
 }
 
 /* 内容 */
@@ -447,9 +445,8 @@ body::-webkit-scrollbar-thumb {
 
 .perry4Bg {
     left: 0;
-    background: url("../images/bg.jpg");
     background-size: cover;
-    background-attachment: fixed;
+    background: url("../images/bg.jpg") fixed;
 }
 
 .perry4ItemTitle {

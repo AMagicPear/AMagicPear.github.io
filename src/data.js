@@ -1,4 +1,4 @@
-export default {
+export const data = {
     index: {
         title: "你好，我是",
         me: [
@@ -6,7 +6,7 @@ export default {
             "独立音乐人AMagicPear",
             "一个数字媒体技术的大学生"
         ],
-        bg: "./images/bg.jpg",
+        bg: "../images/bg2.jpg",
         subTitle: "天有云兮云又痴.",
         contact: [{
                 name: "Blog",
@@ -117,10 +117,10 @@ export default {
                 <p>14、使用 .NET Core MailMessage 实现了邮件通知功能；</p>
                 <h2>项目预览</h2>
                 <ul>
-                    <li><img src="./images/tucao1.png"></li>
-                    <li><img src="./images/tucao2.png"></li>
-                    <li><img src="./images/tucao3.png"></li>
-                    <li><img src="./images/tucao4.png"></li>
+                    <li><img src="../images/tucao1.png"></li>
+                    <li><img src="../images/tucao2.png"></li>
+                    <li><img src="../images/tucao3.png"></li>
+                    <li><img src="../images/tucao4.png"></li>
                 </ul>
                 <h2>项目职责</h2>
                 <p>1、数据库设计，模块设计；</p>
