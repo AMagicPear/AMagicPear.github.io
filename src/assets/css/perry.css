@@ -79,35 +79,12 @@ body::-webkit-scrollbar-thumb {
     box-sizing: border-box;
 }
 
-.magicContent {
-    position: absolute;
-    box-shadow: 10px 0 30px black;
-    z-index: 2;
-}
-
 #MainTitle {
     font-size: var(--titleSize);
     margin-bottom: 20px;
 }
 
-.ContentSubTitle {
-    font-size: var(--contextSize);
-    margin-bottom: 20px;
-}
 
-.ContentContact {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.ContentContact li {
-    margin-right: 20px;
-    font-size: var(--contextSize);
-}
-
-.ContentContact i {
-    color: black;
-}
 
 .el-tooltip__popper {
     font-size: 1rem;
@@ -133,11 +110,7 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
 }
 
-.magicBg {
-    right: 0;
-    background-size: cover;
-    background: url("../images/bg.jpg") fixed;
-}
+
 
 .perry2Bg {
     left: 0;
@@ -401,7 +374,7 @@ body::-webkit-scrollbar-thumb {
 .perry4Bg {
     left: 0;
     background-size: cover;
-    background: url("../images/bg.jpg") fixed;
+    background: url("../images/bg.webp") fixed;
 }
 
 .perry4ItemTitle {
@@ -506,10 +479,6 @@ body::-webkit-scrollbar-thumb {
         --contextSize: 1.2rem;
     }
 
-    .magicContent {
-        padding: 40px;
-    }
-
     .perry2ContentMe {
         padding: 0;
     }
@@ -551,17 +520,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media(max-width: 560px) {
-    .magicBg {
-        width: 100%;
-        height: 40%;
-        top: 0;
-    }
 
-    .magicContent {
-        bottom: 0;
-        width: 100%;
-        height: 60%;
-    }
 
     .loadMore {
         padding: 5px 30px 10px;

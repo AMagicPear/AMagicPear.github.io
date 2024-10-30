@@ -5,7 +5,8 @@ const data = {
         me: [
             "一只会魔法的梨",
             "独立音乐人AMagicPear",
-            "一个数字媒体技术的大学生"
+            "一个数字媒体技术的大学生",
+            "INFP小蝴蝶"
         ],
         bg: "../images/bg2.jpg",
         subTitle: "天有云兮云又痴.",
@@ -135,7 +136,7 @@ const data = {
                     "Vue", "ElementUI", "MinitUI", "Redis", "SSM", "JAVA", "Mysql"
                 ],
                 url: "https://gitee.com/lu_chengwei/pc/",
-                img: "/src/assets/images/bg.jpg",
+                img: "/src/assets/images/bg.webp",
                 content: `<h2>项目类型</h2>
                 <p>练手项目</p>
                 <h2>开发周期</h2>

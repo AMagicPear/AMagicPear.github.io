@@ -25,7 +25,7 @@ import ScrollReveal from 'scrollreveal';
 const animationLoad = () => {
   const animationDom = [
     ["#MainTitle", 0],
-    [".ContentSubTitle", 500],
+    [".SubTitle", 500],
     [".ContentContact", 1000],
     [".magicLoadMore", 1500],
     [".perry2ContentTitle", 0],
