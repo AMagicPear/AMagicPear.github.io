@@ -23,8 +23,8 @@ import ScrollReveal from 'scrollreveal';
 
 // 动画加载
 const animationLoad = () => {
-  let animationDom = [
-    [".ContentTitle", 0],
+  const animationDom = [
+    ["#MainTitle", 0],
     [".ContentSubTitle", 500],
     [".ContentContact", 1000],
     [".magicLoadMore", 1500],
@@ -35,17 +35,17 @@ const animationLoad = () => {
     [".perry3ContentBox", 500],
     [".perry4Content li", 500],
   ];
-  let a = ScrollReveal();
-  animationDom.forEach(item => {
-    a.reveal(item[0] as string, {
-      duration: 1500,
-      delay: 100,
-      origin: "bottom",
-      mobile: true,
-      distance: "2rem",
-      opacity: 0.001,
-      easing: "cubic-bezier(.98,0,.04,1)"
-    });
+  const animationConfig = {
+    duration: 1500,
+    delay: 100,
+    origin: "bottom",
+    mobile: true,
+    distance: "2rem",
+    opacity: 0.001,
+    easing: "cubic-bezier(.98,0,.04,1)"
+  };
+  animationDom.forEach(([selector, delay]) => {
+    ScrollReveal().reveal(selector as string, { ...animationConfig, delay: delay as number });
   });
 };
 

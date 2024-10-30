@@ -1,11 +1,12 @@
 <template>
   <!-- 首页 -->
-  <div class="perry magic">
+  <div class="perry">
     <!-- 内容 -->
     <div class="perryContent magicContent">
       <div>
-        <div class="ContentTitle">
+        <div id="MainTitle">
           <span>{{ perry_data.index.title }}</span>
+          <!-- 打字效果 -->
           <span class="magicTyping"></span>
         </div>
         <div class="ContentSubTitle">{{ perry_data.index.subTitle }}</div>
@@ -49,3 +50,16 @@ onMounted(() => {
   startTyping();
 });
 </script>
+
+<style scoped>
+.perry {
+  height: 800px;
+  overflow: hidden;
+}
+
+@media(max-width: 560px) {
+  .perry {
+    height: 700px;
+  }
+}
+</style>
