@@ -32,7 +32,7 @@
         </div>
       </div>
     </div>
-    <el-dialog :title="perry_data.project.list[projectIndex].name" :visible.sync="projectDialog" append-to-body="true"
+    <el-dialog :title="perry_data.project.list[projectIndex].name" :visible.sync="projectDialog" :append-to-body="true"
       modal-append-to-body="true">
       <a :href="perry_data.project.list[projectIndex].url" class="perry3ContentBtn" target="_blank">点我查看</a>
       <div v-html="perry_data.project.list[projectIndex].content"></div>
@@ -43,3 +43,6 @@
 import { perry_data } from '@/data';
 import { scrollGoTo, showProject, projectIndex, projectDialog } from '@/utils';
 </script>
+<style scoped>
+
+</style>

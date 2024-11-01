@@ -19,3 +19,6 @@
 <script setup lang="ts">
 import { perry_data } from '@/data';
 </script>
+<style scoped>
+
+</style>

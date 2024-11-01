@@ -1,36 +1,6 @@
 import { ref } from "vue";
 const data = {
     index: {
-        title: "你好，我是",
-        me: [
-            "一只会魔法的梨",
-            "独立音乐人AMagicPear",
-            "一个数字媒体技术的大学生",
-            "INFP小蝴蝶"
-        ],
-        bg: "../images/bg2.jpg",
-        subTitle: "天有云兮云又痴.",
-        contact: [{
-                name: "Blog",
-                icon: "fa-wordpress",
-                link: "https://blog.n0ts.top/"
-            },
-            {
-                name: "Email",
-                icon: "fa-envelope",
-                link: "mailto:AMagicPear@outlook.com"
-            },
-            {
-                name: "Gitee",
-                icon: "fa-github",
-                link: "https://gitee.com/n0ts"
-            },
-            {
-                name: "QQ",
-                icon: "fa-qq",
-                link: "https://wpa.qq.com/msgrd?v=3&uin=1656071287&site=qq&menu=yes"
-            }
-        ],
         loadMore: {
             text: "了解更多",
             class: "perry2"
@@ -39,7 +9,7 @@ const data = {
     about: {
         title: "关于我（尚未完善）",
         me: {
-            img: "/src/assets/images/me.jpg",
+            // img: "/src/assets/images/me.jpg", 这里引入显示不出来，在页面内引入了
             content: "<span></span><b>一只会魔法的梨</b>，是一种十分罕见且稀有的梨类品种。<br><span></span>每天吃小羊为食。"
         },
         ability: [{

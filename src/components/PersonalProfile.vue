@@ -6,7 +6,7 @@
         <p class="perry2ContentTitle">{{ perry_data.about.title }}</p>
         <div class="perry2ContentMe">
           <div class="perry2ContentImg">
-            <img :src="perry_data.about.me.img" :alt="perry_data.about.me.img">
+            <img src="/images/me.jpg" alt="meImage">
           </div>
           <div class="perry2ContentText">
             <div v-html="perry_data.about.me.content" class="perry2ContentTextBox"></div>
@@ -33,3 +33,6 @@
 import { scrollGoTo } from '../utils';
 import { perry_data } from '../data';
 </script>
+<style scoped>
+
+</style>
