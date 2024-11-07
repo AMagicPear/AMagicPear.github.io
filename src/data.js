@@ -7,40 +7,6 @@ const data = {
         }
     },
     about: {
-        title: "关于我（尚未完善）",
-        me: {
-            // img: "/src/assets/images/me.jpg", 这里引入显示不出来，在页面内引入了
-            content: "<span></span><b>一只会魔法的梨</b>，是一种十分罕见且稀有的梨类品种。<br><span></span>每天吃小羊为食。"
-        },
-        ability: [{
-                icon: "fa-html5",
-                title: "前端",
-                subTitle: "HTML，CSS，Js，Vue...",
-                color: "#ff4757",
-                bfb: "80%"
-            },
-            {
-                icon: "fa-code",
-                title: "后端",
-                subTitle: "ASP.NET，.NET Core，Node.js...",
-                color: "#ffa502",
-                bfb: "80%"
-            },
-            {
-                icon: "fa-linux",
-                title: "Linux",
-                subTitle: "Nginx，Apache，基础操作...",
-                color: "#1e90ff",
-                bfb: "50%"
-            },
-            {
-                icon: "fa-photo",
-                title: "设计",
-                subTitle: "Photoshop，CorelDRAW...",
-                color: "#2ed573",
-                bfb: "80%"
-            }
-        ],
         loadMore: {
             text: "继续浏览",
             class: "perry3"

@@ -38,7 +38,8 @@ import { onMounted } from 'vue';
 // 用来打字效果的数组
 const me = [
   "一只会魔法的梨",
-  "独立音乐人AMagicPear",
+  "AMagicPear",
+  "独立音乐人",
   "一个数字媒体技术的大学生",
   "INFP小蝴蝶"
 ]
@@ -70,6 +71,11 @@ const contact = [
     name: "Bilibili",
     icon: "bilibili",
     link: "https://space.bilibili.com/52833994"
+  },
+  {
+    name: "Netease Music",
+    icon: "netease-music",
+    link: "https://music.163.com/#/artist?id=34318509"
   }
 ];
 </script>
