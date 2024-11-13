@@ -43,6 +43,8 @@
 import { ref } from 'vue';
 import { perry_data } from '@/data';
 import { scrollGoTo} from '@/utils';
+import Viewer from 'viewerjs';
+import 'viewerjs/dist/viewer.css';
 // 展示项目
 const projectIndex = ref(0); // 当前展示项目索引
 const projectDialog = ref(false); // 项目演示窗口打开
