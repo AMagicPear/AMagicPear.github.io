@@ -60,7 +60,7 @@ const contact = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:AMagicPear@outlook.com"
+    link: "mailto:hello@amagicpear.sbs"
   },
   {
     name: "Github",
