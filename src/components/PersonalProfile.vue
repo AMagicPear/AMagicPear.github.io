@@ -10,12 +10,12 @@
           </div>
           <div class="perry2ContentText">
             <div class="perry2ContentTextBox">
-              <p v-for="(text, index) in description" :key="index">
+              <p v-for="(text, index) in description" :key="index" data-aos="zoom-out-up" data-aos-easing="ease-in-out">
                 <span></span>{{ text }}<br>
               </p>
             </div>
             <ul>
-              <li v-for="item in ability" :style="'border-top: 5px solid ' + item.color" :key="item.title">
+              <li data-aos="zoom-out-up" data-aos-easing="ease-in-out" v-for="item in ability" :style="'border-top: 5px solid ' + item.color" :key="item.title">
                 <i>
                   <img :src="`/icons/${item.icon}.svg`" :alt="item.title" class="icon">
                 </i>
@@ -38,6 +38,9 @@
 <script setup lang="ts">
 import { scrollGoTo } from '@/utils';
 import { perry_data } from '@/data';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { onMounted } from 'vue';
 
 interface Ability {
   icon: string;
@@ -87,6 +90,9 @@ const description = [
   "所以，如果你想获得这种力量，就要用真心去爱它，它会给你带来意想不到的惊喜。",
   "如果你愿意，就请跟我一起去寻找这种神奇的梨吧！"
 ];
+onMounted(() => {
+  AOS.init();
+});
 </script>
 <style scoped>
 .icon {

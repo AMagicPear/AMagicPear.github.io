@@ -24,7 +24,7 @@ const data = {
         list: [
             {
                 name: "邮箱",
-                context: "AMagicPear@outlook.com"
+                context: "hello@amagicpear.sbs"
             },
             {
                 name: "QQ",

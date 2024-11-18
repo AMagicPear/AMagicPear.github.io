@@ -28,9 +28,9 @@ const animationLoad = () => {
     [".SubTitle", 500],
     [".ContentContact", 1000],
     [".magicLoadMore", 1500],
-    [".perry2ContentTitle", 0],
-    [".perry2ContentMe", 500],
-    [".perry2ContentText li", 500],
+    // [".perry2ContentTitle", 0],
+    // [".perry2ContentMe", 500],
+    // [".perry2ContentText li", 500], 此处换AOS的动画了
     [".perry2LoadMore", 1000],
     [".perry3ContentBox", 500],
     [".perry4Content li", 500],
