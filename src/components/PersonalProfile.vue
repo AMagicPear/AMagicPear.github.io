@@ -3,9 +3,9 @@
     <!-- 内容 -->
     <div class="perryContent perry2Content">
       <div>
-        <p class="perry2ContentTitle">关于我</p>
+        <p class="perry2ContentTitle" data-aos="zoom-out-up">关于我</p>
         <div class="perry2ContentMe">
-          <div class="perry2ContentImg">
+          <div class="perry2ContentImg" data-aos="fade-right">
             <img src="/images/me.webp" alt="meImage">
           </div>
           <div class="perry2ContentText">

@@ -2,7 +2,7 @@
   <div class="perry perry3">
     <div class="perryContent perry3Content">
       <div>
-        <p class="perry2ContentTitle">我的项目</p>
+        <p class="perry2ContentTitle" data-aos="zoom-out-up">我的项目</p>
         <div class="perry3ContentList">
           <div class="perry3ContentBox" v-for="(item, index) in projectList" :key="index">
             <img :src="item.img" :alt="item.img">

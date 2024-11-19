@@ -1,29 +1,6 @@
-# perryHome
+# 一个会魔法的网页
+本项目是我的个人主页。进入[一个会魔法的网页](https://www.amagicpear.sbs/)即可访问。
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-bun install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-bun dev
-```
-
-### Compile and Minify for Production
-
-```sh
-bun build
-```
+## 项目参考
+本项目由以N0ts的项目`NutssssIndex4`为模板，使用Vue3模块化重构。
+参考项目见：https://gitee.com/n0ts/NutssssIndex/tree/master/NutssssIndex4
