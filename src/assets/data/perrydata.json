@@ -1,0 +1,21 @@
+{
+    "index": {
+        "loadMore": {
+            "text": "了解更多",
+            "class": "perry2"
+        }
+    },
+    "about": {
+        "loadMore": {
+            "text": "继续浏览",
+            "class": "perry3"
+        }
+    },
+    "project": {
+        "listLoadMore": "查看",
+        "loadMore": {
+            "text": "继续浏览",
+            "class": "perry4"
+        }
+    }
+}

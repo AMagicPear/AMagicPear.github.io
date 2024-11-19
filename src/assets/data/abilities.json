@@ -1,0 +1,30 @@
+[
+  {
+    "icon": "composition",
+    "title": "编曲",
+    "subTitle": "Ableton Live",
+    "color": "#ff4757",
+    "bfb": "90%"
+  },
+  {
+    "icon": "visual-design",
+    "title": "视觉设计",
+    "subTitle": "Photoshop、Sketch、Pixso……",
+    "color": "#2ed573",
+    "bfb": "80%"
+  },
+  {
+    "icon": "3d",
+    "title": "三维",
+    "subTitle": "Blender、3ds Max……",
+    "color": "#1e90ff",
+    "bfb": "60%"
+  },
+  {
+    "icon": "front-end",
+    "title": "前端",
+    "subTitle": "HTML、CSS、JavaScript、Vue3……",
+    "color": "#ffa502",
+    "bfb": "30%"
+  }
+]

@@ -41,7 +41,7 @@
 </template>
 <script setup lang="ts">
 import { ref } from 'vue';
-import { perry_data } from '@/data';
+import perry_data from '@/assets/data/perrydata.json';
 import { scrollGoTo} from '@/utils';
 import Viewer from 'viewerjs';
 import 'viewerjs/dist/viewer.css';

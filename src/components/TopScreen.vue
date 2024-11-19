@@ -31,7 +31,7 @@
 
 <script setup lang="ts">
 import { scrollGoTo } from '@/utils';
-import { perry_data } from '@/data';
+import perry_data from '@/assets/data/perrydata.json';
 import Typed from 'typed.js';
 import { onMounted } from 'vue';
 

@@ -1,0 +1,17 @@
+{
+    "title": "联系我",
+    "list": [
+        {
+            "name": "邮箱",
+            "context": "hello@amagicpear.sbs"
+        },
+        {
+            "name": "QQ",
+            "context": "2559407397"
+        },
+        {
+            "name": "微信",
+            "context": "AMagicPear"
+        }
+    ]
+}
