@@ -1,9 +1,9 @@
 <template>
-  <div class="perry perry3">
-    <div class="perryContent perry3Content">
+  <div class="perry">
+    <div class="perryContent">
       <div>
         <p class="perry2ContentTitle" data-aos="zoom-out-up">我的项目</p>
-        <div class="perry3ContentList">
+        <div class="perryContentList">
           <div class="perry3ContentBox" v-for="(item, index) in projectList" :key="index">
             <img :src="item.img" :alt="item.img">
             <div class="perry3ContentBoxText">
@@ -32,11 +32,6 @@
         </div>
       </div>
     </div>
-    <el-dialog :title="projectList[projectIndex].name" :visible.sync="projectDialog" :append-to-body="true"
-      modal-append-to-body="true">
-      <a :href="projectList[projectIndex].url" class="perry3ContentBtn" target="_blank">点我查看</a>
-      <div v-html="projectList[projectIndex].content"></div>
-    </el-dialog>
   </div>
 </template>
 <script setup lang="ts">
@@ -69,22 +64,22 @@ const projectList: project[] = [
     name: '今天吃什么',
     text: '一个决定今天吃什么的小程序',
     nb: ['Vue3', 'Ionic'],
-    url: '项目地址',
-    img: '项目图片',
+    url: 'https://github.com/AMagicPear/What-to-eat-today-web',
+    img: '/images/projects/what-to-eat.png',
     content: '项目内容'
   },
   {
     name: '进化',
     text: '一张专辑',
-    nb: ['Live'],
-    url: '项目地址',
-    img: '项目图片',
+    nb: ['Ableton Live'],
+    url: 'https://music.163.com/album?id=169551625&userid=497062445',
+    img: '/images/projects/进化.jpg',
     content: '项目内容'
   }
 ]
 </script>
 <style scoped>
-.perry3 {
+.perry {
     height: auto;
     background: white;
     border-radius: 200px 200px 0 0;
@@ -94,12 +89,12 @@ const projectList: project[] = [
     -o-border-radius: 200px 200px 0 0;
 }
 
-.perry3Content {
+.perryContent {
     width: 100%;
     height: auto;
 }
 
-.perry3ContentList {
+.perryContentList {
     width: 1000px;
     display: flex;
     justify-content: space-between;
@@ -204,5 +199,51 @@ const projectList: project[] = [
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.perry3ContentBoxText,
+.perry3ContentBox img,
+.perry3ContentBtn{
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+@media(max-width:1070px) {
+    .perry {
+        border-radius: 150px 150px 0 0;
+        -webkit-border-radius: 150px 150px 0 0;
+        -moz-border-radius: 150px 150px 0 0;
+        -ms-border-radius: 150px 150px 0 0;
+        -o-border-radius: 150px 150px 0 0;
+    }
+    .perryContentList {
+        width: 660px;
+        min-width: 660px;
+    }
+}
+@media(max-width: 778px) {
+    .perry {
+        border-radius: 100px 100px 0 0;
+        -webkit-border-radius: 100px 100px 0 0;
+        -moz-border-radius: 100px 100px 0 0;
+        -ms-border-radius: 100px 100px 0 0;
+        -o-border-radius: 100px 100px 0 0;
+}
+
+    .perryContentList {
+        width: 300px;
+        min-width: 300px;
+    }
+
+    .perry3ContentBoxText {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
 }
 </style>
