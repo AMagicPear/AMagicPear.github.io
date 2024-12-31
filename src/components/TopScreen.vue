@@ -18,8 +18,8 @@
           </li>
         </ul>
         <div class="magicLoadMore">
-          <div class="loadMore" @click="scrollGoTo(perry_data.index.loadMore.class)">
-            {{ perry_data.index.loadMore.text }}
+          <div class="loadMore" @click="scrollGoTo('perry2')">
+            了解更多
           </div>
         </div>
       </div>
@@ -31,7 +31,6 @@
 
 <script setup lang="ts">
 import { scrollGoTo } from '@/utils';
-import perry_data from '@/assets/data/perrydata.json';
 import Typed from 'typed.js';
 import { onMounted } from 'vue';
 

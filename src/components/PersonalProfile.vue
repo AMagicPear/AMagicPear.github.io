@@ -27,8 +27,8 @@
           </div>
         </div>
         <div class="perry2LoadMore">
-          <div class="loadMore" @click="scrollGoTo(perry_data.about.loadMore.class)">
-            {{ perry_data.about.loadMore.text }}
+          <div class="loadMore" @click="scrollGoTo('perry3')">
+            继续浏览
           </div>
         </div>
       </div>
@@ -37,7 +37,6 @@
 </template>
 <script setup lang="ts">
 import { scrollGoTo } from '@/utils';
-import perry_data from '@/assets/data/perrydata.json';
 import abilities from '@/assets/data/abilities.json';
 import description from '@/assets/data/description.json';
 </script>
