@@ -5,7 +5,7 @@
     <!-- 内容 -->
     <div class="perryContent perry4Content">
       <div>
-        <p class="perry2ContentTitle" data-aos="zoom-out-up">{{ contact.title }}</p>
+        <p class="mainContentTitle" data-aos="zoom-out-up">{{ contact.title }}</p>
         <ul>
           <li v-for="item in contact.list" :key="item.name">
             <p class="perry4ItemTitle">{{ item.name }}</p>

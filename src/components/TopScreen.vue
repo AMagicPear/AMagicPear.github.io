@@ -1,12 +1,9 @@
 <template>
-  <!-- 首页 -->
   <div class="perry">
-    <!-- 内容 -->
     <div class="topContent">
       <div>
         <div id="MainTitle">
           <span>你好，我是<br /></span>
-          <!-- 打字效果 -->
           <span class="magicTyping"></span>
         </div>
         <div class="SubTitle">天有云兮云又痴.</div>
@@ -24,7 +21,6 @@
         </div>
       </div>
     </div>
-    <!-- 壁纸 -->
     <div class="perryBg topBg"></div>
   </div>
 </template>
@@ -34,27 +30,14 @@ import { scrollGoTo } from '@/utils';
 import Typed from 'typed.js';
 import { onMounted } from 'vue';
 
-// 用来打字效果的数组
 const me = [
   "一只会魔法的梨",
-  "AMagicPear",
+  "AMagicPear", 
   "独立音乐人",
   "一个数字媒体技术的大学生",
   "INFP小蝴蝶"
-]
-// 开启打字效果
-const startTyping = () => {
-  new Typed(".magicTyping", {
-    strings: me,
-    typeSpeed: 30,
-    backDelay: 2000,
-    backSpeed: 50,
-    loop: true
-  });
-};
-onMounted(() => {
-  startTyping();
-});
+];
+
 const contact = [
   {
     name: "Email",
@@ -77,6 +60,20 @@ const contact = [
     link: "https://music.163.com/#/artist?id=34318509"
   }
 ];
+
+const startTyping = () => {
+  new Typed(".magicTyping", {
+    strings: me,
+    typeSpeed: 30,
+    backDelay: 2000,
+    backSpeed: 50,
+    loop: true
+  });
+};
+
+onMounted(() => {
+  startTyping();
+});
 </script>
 
 <style scoped>
@@ -86,22 +83,22 @@ const contact = [
 }
 
 .topContent {
+  position: absolute;
   left: 0;
   width: 50%;
   height: 100%;
+  padding: 80px;
   display: flex;
   align-items: center;
-  padding: 80px;
   box-sizing: border-box;
-  position: absolute;
   box-shadow: 10px 0 30px rgb(239, 223, 223);
-  z-index: 2; /* 阴影 */
+  z-index: 2;
 }
 
 .topBg {
   right: 0;
-  background-size: contain;
   background: url("/images/bg.webp") fixed;
+  background-size: contain;
 }
 
 .SubTitle {
@@ -116,38 +113,33 @@ const contact = [
 
 .ContentContact li {
   margin-right: 20px;
-  font-size: var(--contextSize);
-}
-
-.ContentContact i {
-  color: black;
 }
 
 .icon {
   width: 26px;
 }
 
-@media(max-width: 560px) {
+@media (max-width: 930px) {
+  .topContent {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 560px) {
   .perry {
     height: 700px;
   }
 
   .topContent {
-    bottom: 0;
     width: 100%;
     height: 60%;
+    bottom: 0;
   }
 
   .topBg {
     width: 100%;
     height: 40%;
     top: 0;
-  }
-}
-
-@media(max-width: 930px) {
-  .topContent {
-    padding: 40px;
   }
 }
 </style>
