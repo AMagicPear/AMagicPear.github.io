@@ -16,9 +16,61 @@
     </div>
   </div>
 </template>
+
 <script setup lang="ts">
 import contact from '@/assets/data/contact.json';
 </script>
-<style scoped>
 
+<style scoped>
+.perry4 {
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+}
+
+.perry4Bg {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: url("/images/bg.webp") fixed center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.perry4Content {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  box-sizing: border-box;
+  box-shadow: -10px 0 30px rgb(239, 223, 223);
+  z-index: 2;
+}
+
+.mainContentTitle {
+  font-size: 2rem;
+}
+
+@media (max-width: 560px) {
+  .perry4 {
+    height: 700px;
+  }
+
+  .perry4Content {
+    width: 100%;
+    height: 60%;
+    bottom: 0;
+  }
+
+  .perry4Bg {
+    width: 100%;
+    height: 40%;
+    top: 0;
+  }
+}
 </style>

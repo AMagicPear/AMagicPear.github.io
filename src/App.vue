@@ -1,13 +1,9 @@
 <template>
   <div id="app">
     <div id="perry">
-      <div id="perry1"></div>
       <TopScreen />
-      <div id="perry2"></div>
       <PersonalProfile />
-      <div id="perry3"></div>
       <ProjectIntroduction />
-      <div id="perry4"></div>
       <ContactMe />
     </div>
   </div>
@@ -23,23 +19,23 @@ import ScrollReveal from 'scrollreveal';
 
 const animationLoad = () => {
   const animationDom = [
-    ["#MainTitle", 0],
-    [".SubTitle", 500],
-    [".ContentContact", 1000],
-    [".magicLoadMore", 1500],
-    [".perry2LoadMore", 1000],
-    [".perry3ContentBox", 500],
-    [".perry4Content li", 500],
+    ['#MainTitle', 0],
+    ['.SubTitle', 500],
+    ['.ContentContact', 1000],
+    ['.magicLoadMore', 1500],
+    ['.perry2LoadMore', 1000],
+    ['.perry3ContentBox', 500],
+    ['.perry4Content li', 500],
   ];
-  
+
   const animationConfig = {
     duration: 1500,
     delay: 100,
-    origin: "bottom",
+    origin: 'bottom',
     mobile: true,
-    distance: "2rem",
+    distance: '2rem',
     opacity: 0.001,
-    easing: "cubic-bezier(.98,0,.04,1)"
+    easing: 'cubic-bezier(.98,0,.04,1)',
   };
 
   animationDom.forEach(([selector, delay]) => {

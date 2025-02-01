@@ -149,8 +149,9 @@ const projectList: project[] = [
 <style scoped>
 .perry {
   height: auto;
-  background: white;
+  background: #f5f7fa; /* 更加轻快的背景色 */
   border-radius: 200px 200px 0 0;
+  padding: 60px 0;
 }
 
 .perryContent {
@@ -159,23 +160,27 @@ const projectList: project[] = [
 }
 
 .perryContentList {
-  width: 1000px;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 3rem; /* 增加间距 */
 }
 
 .perry3ContentBox,
 .perry3ContentBoxTc {
   width: 300px;
   height: 400px;
-  background: white;
-  margin-bottom: 50px;
+  background: #ffffff;
+  margin-bottom: 1.5rem; /* 减少底部间距 */
   overflow: hidden;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 0.75rem; /* 圆角更小 */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08); /* 更轻的阴影 */
 }
 
 .perry3ContentBox {
@@ -191,44 +196,42 @@ const projectList: project[] = [
   height: 100%;
   object-fit: cover;
   position: absolute;
-  transition: all .3s ease-in-out;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -ms-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .perry3ContentBox:hover img {
-  transform: scale(1.5) rotate(5deg);
-  -webkit-transform: scale(1.5) rotate(5deg);
-  -moz-transform: scale(1.5) rotate(5deg);
-  -ms-transform: scale(1.5) rotate(5deg);
-  -o-transform: scale(1.5) rotate(5deg);
+  transform: scale(1.2) rotate(5deg);
 }
 
 .perry3ContentBoxText {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, .7);
+  background: rgba(255, 255, 255, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
   transform: scale(0);
-  padding: 20px;
+  padding: 1.5rem; /* 增加内边距 */
   box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  border-radius: 0.75rem; /* 圆角更小 */
 }
 
 .perry3ContentBox:hover .perry3ContentBoxText {
   transform: scale(1);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .perry3ContentTitle {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
 }
 
 .perry3ContentText {
-  font-size: var(--contextSize);
+  font-size: 1rem;
+  color: #555;
 }
 
 .perry3ContentBoxText ul {
@@ -244,16 +247,19 @@ const projectList: project[] = [
 .perry3ContentBtn {
   display: inline-block;
   cursor: pointer;
-  padding: 5px 30px 8px;
-  border: 1px solid black;
-  font-size: 1.3rem;
-  color: black;
-  margin-top: 20px;
+  padding: 0.75rem 1.5rem; /* 增加内边距 */
+  border: 1px solid #3182ce;
+  font-size: 1rem;
+  color: #3182ce;
+  margin-top: 1.5rem; /* 减少顶部间距 */
+  border-radius: 0.75rem; /* 圆角更小 */
+  transition: all 0.3s ease;
 }
 
 .perry3ContentBtn:hover {
+  background: #3182ce;
   color: white;
-  box-shadow: inset 0 -100px 0 black;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12); /* 更明显的悬停效果 */
 }
 
 .perry3LoadMore {
@@ -264,11 +270,11 @@ const projectList: project[] = [
 
 .project-detail {
   display: flex;
-  gap: 30px;
-  background: linear-gradient(145deg, #ffffff, #f8f9fa);
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  gap: 2rem; /* 增加间距 */
+  background: #ffffff;
+  padding: 2rem; /* 增加内边距 */
+  border-radius: 1rem; /* 圆角更小 */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08); /* 更轻的阴影 */
   position: relative;
 }
 
@@ -293,24 +299,26 @@ const projectList: project[] = [
 }
 
 .project-image {
-  width: 250px;
+  width: 250px; /* 缩小图片尺寸 */
   height: 250px;
   object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem; /* 圆角更小 */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08); /* 更轻的阴影 */
 }
 
 .project-info {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.5rem; /* 增加间距 */
+  padding: 0 1.5rem; /* 增加内边距 */
 }
 
 .project-description {
   font-size: 1.1rem;
   line-height: 1.6;
   color: #4a5568;
+  margin-bottom: 1.5rem; /* 减少底部间距 */
 }
 
 .project-tech {
@@ -320,11 +328,13 @@ const projectList: project[] = [
 }
 
 .tech-badge {
-  padding: 6px 12px;
+  padding: 0.5rem 1rem; /* 增加内边距 */
   background: #e2e8f0;
-  border-radius: 20px;
+  border-radius: 0.75rem; /* 圆角更小 */
   font-size: 0.9rem;
   color: #4a5568;
+  margin-right: 0.5rem; /* 减少右边距 */
+  margin-bottom: 0.5rem; /* 减少底部间距 */
 }
 
 .project-features {
@@ -348,17 +358,18 @@ const projectList: project[] = [
   position: absolute;
   left: -15px;
   color: #4299e1;
+  font-size: 1rem; /* 减小项目符号大小 */
 }
 
 .project-link {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 12px 24px;
-  background: linear-gradient(135deg, #4299e1, #3182ce);
+  gap: 0.75rem; /* 增加间距 */
+  padding: 12px 24px; /* 修正缺失的闭合大括号 */
+  background: #3182ce;
   color: white;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 0.75rem; /* 圆角更小 */
   transition: all 0.3s ease;
   width: fit-content;
   margin-top: 20px;
@@ -380,7 +391,7 @@ const projectList: project[] = [
   transform: translateY(0);
 }
 
-@media(max-width:1070px) {
+@media (max-width: 1070px) {
   .project-detail {
     flex-direction: column;
     align-items: center;
@@ -400,6 +411,7 @@ const projectList: project[] = [
   .project-link {
     margin: 20px auto 0;
   }
+
   .perry {
     border-radius: 150px 150px 0 0;
   }
@@ -410,7 +422,7 @@ const projectList: project[] = [
   }
 }
 
-@media(max-width: 778px) {
+@media (max-width: 778px) {
   .perry {
     border-radius: 100px 100px 0 0;
   }
@@ -423,5 +435,25 @@ const projectList: project[] = [
   .perry3ContentBoxText {
     transform: scale(1);
   }
+}
+
+/* 从 perry.css 迁移过来的样式 */
+.perry3Content > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mainContentTitle {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.perry3ContentBtn {
+  margin: 0;
+  margin-bottom: 20px;
 }
 </style>

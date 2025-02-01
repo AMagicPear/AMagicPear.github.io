@@ -44,7 +44,6 @@
 <script setup lang="ts">
 import { scrollGoTo } from '@/utils';
 import abilities from '@/assets/data/abilities.json';
-import description from '@/assets/data/description.json';
 </script>
 
 <style scoped>

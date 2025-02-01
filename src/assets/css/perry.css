@@ -1,199 +1,163 @@
 @font-face {
-    font-family: alimama;
-    src: url("/fonts/AlimamaShuHeiTi-Bold.woff2");
+  font-family: alimama;
+  src: url('/fonts/AlimamaShuHeiTi-Bold.woff2');
 }
 
 /* 全局样式 */
 * {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    font-family: alimama;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-tap-highlight-color: transparent;
-    /* 标题文字大小 */
-    --titleSize: 3.5rem;
-    --contextSize: 1.5rem;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: alimama;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  /* 标题文字大小 */
+  --titleSize: 3.5rem;
+  --contextSize: 1.5rem;
 }
 
 html,
 body {
-    background: #f1f2f6;
+  background: #f1f2f6;
 }
 
 #perry {
-    height: 100%;
+  height: 100%;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* 滚动条 */
 body::-webkit-scrollbar {
-    width: 5px;
-    height: 1px;
+  width: 5px;
+  height: 1px;
 }
 
 body::-webkit-scrollbar-thumb {
-    background: black;
+  background: black;
 }
 
 /* 统一过渡 */
-.loadMore{
-    transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
+.loadMore {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
 /* 未渲染则不显示 */
 [v-cloak] {
-    display: none;
+  display: none;
 }
 
 /* 主框架 */
 .perry {
-    position: relative;
+  position: relative;
 }
 
 /* 首页内容 */
 .perryContent {
-    position: relative;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 80px;
-    box-sizing: border-box;
+  position: relative;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  box-sizing: border-box;
 }
 
 #MainTitle {
-    font-size: var(--titleSize);
-    margin-bottom: 20px;
+  font-size: var(--titleSize);
+  margin-bottom: 20px;
 }
 
-
-
 .el-tooltip__popper {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .loadMore {
-    display: inline-block;
-    cursor: pointer;
-    padding: 10px 50px 15px;
-    border: 1px solid black;
-    font-size: 1.3rem;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 50px 15px;
+  border: 1px solid black;
+  font-size: 1.3rem;
 }
 
 .loadMore:hover {
-    color: white;
-    box-shadow: inset 0 -100px 0 black;
+  color: white;
+  box-shadow: inset 0 -100px 0 black;
 }
-
-/* 首页背景 */
-.perryBg {
-    width: 50%;
-    height: 100%;
-    position: absolute;
-}
-
-
-
-.perry3Content>div {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.mainContentTitle {
-    width: 100%;
-    font-size: var(--titleSize);
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-
-
 
 /* 联系我 */
 .perry4 {
-    height: 800px;
+  height: 800px;
 }
 
 .perry4Content {
-    left: 50%;
-    flex-wrap: wrap;
+  left: 50%;
+  flex-wrap: wrap;
 }
 
 .perry4Bg {
-    left: 0;
-    background-size: cover;
-    background: url("/images/bg.webp") fixed;
+  left: 0;
+  background-size: cover;
+  background: url('/images/bg.webp') fixed;
 }
 
 .perry4ItemTitle {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .perry4ItemContext {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .perry4Content li {
-    margin: 20px 0;
-}
-
-.perry3ContentBtn {
-    margin: 0;
-    margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 /* 自适应 */
 
-
-
-@media(max-width: 930px) {
-    * {
-        --titleSize: 2.8rem;
-        --contextSize: 1.2rem;
-    }
+@media (max-width: 930px) {
+  * {
+    --titleSize: 2.8rem;
+    --contextSize: 1.2rem;
+  }
 }
 
+@media (max-width: 560px) {
+  .loadMore {
+    padding: 5px 30px 10px;
+  }
 
-@media(max-width: 560px) {
-    .loadMore {
-        padding: 5px 30px 10px;
-    }
+  .perry4Content {
+    width: 65%;
+    left: 30%;
+    padding: 20px;
+  }
 
-    .perry4Content {
-        width: 65%;
-        left: 30%;
-        padding: 20px;
-    }
+  .perry4Bg {
+    width: 35%;
+  }
 
-    .perry4Bg {
-        width: 35%;
-    }
+  .el-dialog {
+    width: 90%;
+  }
 
-    .el-dialog {
-        width: 90%;
-    }
+  .el-dialog__body ul {
+    text-align: center;
+  }
 
-    .el-dialog__body ul {
-        text-align: center;
-    }
-
-    .el-dialog__body ul img {
-        width: 80%;
-    }
+  .el-dialog__body ul img {
+    width: 80%;
+  }
 }
